@@ -1,14 +1,22 @@
 
-import { Card, CardHeader, CardBody, CardFooter, Image } from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter, Image, Heading } from '@chakra-ui/react'
+import { Game } from '../assets/hooks/useGame'
 
+interface Props {
+ game: Game,
+}
 
-const GameCard = () => {
+const GameCard = ({game}: Props) => {
   return (
    <>
-   <Card>
+   <Card overflow='hidden'>
+   <Image src={game.background_image}  />
     <CardBody>
-        <Image src='https://unsplash.com/fr/photos/un-drapeau-americain-au-sommet-dun-immeuble-yH-91E4c5_4' />
         
+      
+        
+          <Heading fontSize='xl'>{game.name}</Heading>
+       
 
         
     </CardBody>
