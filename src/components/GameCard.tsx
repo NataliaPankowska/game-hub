@@ -3,6 +3,7 @@ import { Card, CardHeader, CardBody, CardFooter, Image, Heading, Text, HStack } 
 import { Game } from '../assets/hooks/useGame'
 import PlatformIconList from './PlatformIconList'
 import CriticScore from './CriticScore'
+import cropImageUrl from '../assets/services/image-url'
 
 interface Props {
  game: Game,
@@ -12,7 +13,7 @@ const GameCard = ({game}: Props) => {
   return (
    <>
    <Card overflow='hidden'>
-   <Image src={game.background_image}  />
+   <Image src={cropImageUrl(game.background_image)}  />
     <CardBody>
         
       
