@@ -16,7 +16,10 @@ function App() {
 
   return (
     <>
-  <Grid padding='10px' templateAreas={{base: `"nav" "main"`, lg: `"nav nav" "aside main"`}}>
+  <Grid padding='10px' 
+  templateAreas={{base: `"nav" "main"`, lg: `"nav nav" "aside main"`}}
+  templateColumns={{base: '1fr', lg: '200px 1fr'}}
+  >
     <GridItem area='nav'>
       <NavBar />
     </GridItem>

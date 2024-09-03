@@ -8,7 +8,7 @@ interface Pops {
 const GameCardContainer = ({children}: Pops) => {
   return (
     <>
-    <Box overflow='hidden' width='300px' borderRadius={10}>
+    <Box overflow='hidden'  borderRadius={10}>
         {children}
     </Box>
     </>
