@@ -5,16 +5,17 @@ import GameCard from './GameCard';
 import GameCardSkeleton from './GameCardSkeleton';
 import GameCardContainer from './GameCardContainer';
 import { Genre } from '../assets/hooks/useGenre';
+import { GameQuery } from '../App';
 
 interface Props {
-  selectedGenres: Genre | null,
-  selectedPlatform: Platform | null
+  gameQuery: GameQuery
+
 }
 
 
-const GameGrid = ({selectedGenres, selectedPlatform}: Props) => {
+const GameGrid = ({gameQuery}: Props) => {
 
-const {data, error, isLoading} = useGame(selectedGenres, selectedPlatform);
+const {data, error, isLoading} = useGame(gameQuery);
 const skeletons = [1,2,3,4,5,6];
 // console.log(games[9].image_background)
   return (
