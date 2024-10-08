@@ -14,6 +14,7 @@ import Genres from './components/Genres'
 import PlatformSelector from './components/PlatformSelector'
 import { Platform } from './hooks/useGame'
 import SortSelector from './components/SortSelector'
+import Heading from './components/Heading'
 
 export interface GameQuery {
   genre: Genre | null,
@@ -41,6 +42,7 @@ const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
     <GridItem area='aside' ><Genres selectedGenre={gameQuery.genre} onSelectGenres={(genre) => setGameQuery({...gameQuery, genre})}/></GridItem>
     </Show>
     <GridItem area='main' >
+      <Heading gameQuery={gameQuery}/>
       <Flex gap={5} marginBottom={5}>
       <SortSelector sortOrder={gameQuery.sortOrder} onSelectSortOrder={(sortOrder) => setGameQuery({...gameQuery, sortOrder})} />
       <PlatformSelector  selectedPlatform={gameQuery.platform} onSelectPlatform={(platform) => setGameQuery({...gameQuery, platform})}/>
