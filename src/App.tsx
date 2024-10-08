@@ -9,10 +9,10 @@ import NavBar from './components/NavBar'
 import GameGrid from './components/GameGrid'
 
 import { useState } from 'react'
-import { Genre } from './assets/hooks/useGenre'
+import { Genre } from './hooks/useGenre'
 import Genres from './components/Genres'
 import PlatformSelector from './components/PlatformSelector'
-import { Platform } from './assets/hooks/useGame'
+import { Platform } from './hooks/useGame'
 import SortSelector from './components/SortSelector'
 
 export interface GameQuery {

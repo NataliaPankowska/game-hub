@@ -1,5 +1,4 @@
-import noImage from '../assets/no-image.webp'
-
+import noImage from "../assets/no-image-placeholder-6f3882e0.webp"
 const cropImageUrl = (url: string) => {
     if (!url) return noImage;
     const target = 'media/';

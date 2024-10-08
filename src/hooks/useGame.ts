@@ -1,5 +1,5 @@
 
-import { GameQuery } from "../../App";
+import { GameQuery } from "../App";
 import useData from "./useData";
 
 

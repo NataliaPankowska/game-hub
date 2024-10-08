@@ -1,8 +1,8 @@
 
 
 import { Button, HStack, Image, List, ListItem, Spinner } from '@chakra-ui/react';
-import  useGenre, { Genre } from '../assets/hooks/useGenre'
-import cropImageUrl from '../assets/services/image-url';
+import  useGenre, { Genre } from '../hooks/useGenre'
+import cropImageUrl from '../services/image-url';
 
 interface Props {
   onSelectGenres : (genre: Genre) => void;
